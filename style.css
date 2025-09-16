@@ -1,0 +1,205 @@
+body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgb(238, 236, 236);
+
+     
+    }
+
+.body {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color:white;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+     
+      animation: fadeIn 1s ease-in-out;
+    
+    }
+
+.head {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .head h1 {
+      font-size: 2.8rem;
+      margin: 0;
+      background: linear-gradient(90deg, #0073e6, #00c6ff);
+        color:white;
+      letter-spacing: 1px;
+      
+    }
+
+    .head p {
+      color: #666;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+ .i img {
+    height: 50vh;
+      width: 100%;
+      border-radius: 20px;
+      margin-bottom: 40px;
+       transition: transform 0.6s ease, box-shadow 0.6s ease;
+    }
+
+
+.form {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .form-i img {
+      max-width: 100%;
+      border-radius: 16px;
+    
+    }
+
+    
+
+    .form-t {
+      flex: 1;
+    
+    }
+
+    .form-t h2 {
+      margin-top: 0;
+      font-size: 2rem;
+      color: #222;
+    }
+
+    .form-t p {
+      margin: 20px 0;
+      color: #555;
+      font-size: 1.1rem;
+    }
+
+    .form-t button {
+      padding: 12px 24px;
+      border: none;
+      background: linear-gradient(90deg, #0073e6, #00c6ff);
+      color: #fff;
+      border-radius: 50px;
+      
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 6px 15px rgba(0, 115, 230, 0.4);
+      transition: all 0.3s ease;
+    }
+
+    .form-t button:hover {
+      background: linear-gradient(90deg, #005bb5, #008ecc);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0, 115, 230, 0.5);
+    }
+
+
+
+
+    
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.7);
+     
+    }
+
+    .modal-c {
+      background: #fff;
+      margin: 5% auto;
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 500px;
+      width: 90%;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.3);
+      animation: scaleUp 0.5s ease;
+    }
+
+    .modal-c h2 {
+      margin-top: 0;
+      font-size: 1.8rem;
+      color: #0073e6;
+    }
+
+    .modal-c label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .modal-c input,
+    .modal-c textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .modal-c input:focus,
+    .modal-c textarea:focus {
+      border-color: #0073e6;
+      box-shadow: 0 0 8px rgba(0,115,230,0.3);
+      outline: none;
+    }
+
+    .modal-c button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(90deg, #0073e6, #00c6ff);
+      border: none;
+      color: #fff;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+    }
+
+    .modal-c button:hover {
+      background: linear-gradient(90deg, #005bb5, #008ecc);
+      transform: scale(1.02);
+    }
+
+    .close {
+      float: right;
+      font-size: 28px;
+      cursor: pointer;
+      color: #666;
+      transition: color 0.3s ease;
+    }
+
+    .close:hover {
+      color: #000;
+    }
+
+
+    
+    @media (max-width: 768px) {
+      .form {
+        flex-direction: column;
+      }
+      .form-t h2 {
+        font-size: 1.6rem;
+      }
+    }
+
+   @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+    <title>Blog</title>
+</head>
+<body>
+    <div class="body">
+            <div class="head">
+                    
+             <h1>Our Blog</h1>
+            <p>Latest updates and insights</p>
+             </div>
+            <div class="i">
+            <img src="i2.png" alt="image ">
+            </div>
+
+             <div class="form">
+      <div class="form-i">
+        <img src="./i1.jpg" alt="image">
+      </div>
+      <div class="form-t">
+        <h2>Information</h2>
+        <p>
+         Interested candidates, please add your details in the registration form. For more information, contact us
+        </p>
+        <button id="open">Contact Us</button>
+      </div>
+    </div>
+    </div>
+    
+    </div>
+  </div>
+
+
+
+   <div id="Modall" class="modal">
+    <div class="modal-c">
+      <span id="closee" class="close">&times;</span>
+      <h2>Contact Form</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+
+
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const modal = document.getElementById("Modall");
+      const openBtn = document.getElementById("open");
+      const closeBtn = document.getElementById("closee");
+
+      openBtn.onclick = () => modal.style.display = "block";
+      closeBtn.onclick = () => modal.style.display = "none";
+      window.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };
+    });
+  </script>
+</body>
+</html>
